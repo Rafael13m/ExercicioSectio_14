@@ -22,10 +22,9 @@ public class Ex_148 {
 
 			System.out.println("Outsourced(y/n)?");
 			char resp = sc.next().charAt(0);
-
 			System.out.print("Digite o nome: ");
+			sc.nextLine();
 			String name = sc.nextLine();
-			sc.next();
 			System.out.print("Digite as houras trabalhadas: ");
 			int hours = sc.nextInt();
 			System.out.print("Digite o valor por hora: ");
@@ -45,7 +44,7 @@ public class Ex_148 {
 				list.add(func1);
 			}
 		}
-		
+
 		System.out.println();
 		System.out.println("PAYMENTS");
 		for (Employee emp : list) {
