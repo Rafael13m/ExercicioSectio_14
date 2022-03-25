@@ -1,13 +1,13 @@
 package entities;
 
 public class Employee {
-	
+
 	private String name;
 	protected Integer hours;
 	protected Double valuePerHour;
-	
-	public Employee(){
-		
+
+	public Employee() {
+
 	}
 
 	public Employee(String name, Integer hours, Double valuePerHour) {
@@ -39,11 +39,9 @@ public class Employee {
 	public void setValuePerHour(Double valuePerHour) {
 		this.valuePerHour = valuePerHour;
 	}
-	
+
 	public Double payment() {
 		return hours * valuePerHour;
 	}
-	
-	
 
 }
